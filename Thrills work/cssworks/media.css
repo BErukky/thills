@@ -1,0 +1,38 @@
+@media (max-width:999px) {
+  .shc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0px;
+    right: -200px;
+    height: 100vh;
+    width: 100px;
+    background-color: azure;
+    box-shadow: 0 30px 40px black;
+    padding: 0 0 10px;
+  }
+
+  .close {
+    right: 0px;
+  }
+
+
+
+  #shc li {
+    margin-bottom: 20px;
+  }
+
+  #mune {
+    display: flex;
+    align-items: center;
+
+  }
+
+  #mune i {
+    color: brown;
+    font-size: 30px;
+    padding-left: 20px;
+  }
+}
