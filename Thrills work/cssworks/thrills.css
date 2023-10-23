@@ -75,7 +75,7 @@ body {
     box-shadow: 0 5px 15 rgba(0, 0, 0, 0.40);
     z-index: 999;
     top: 0;
-    left: 0px;
+    left: 60px;
     position: sticky;
 
 }
@@ -154,6 +154,10 @@ body {
     align-items: center;
 }
 
+#close {
+    display: none;
+}
+
 /* HOME Page*/
 h1 {
     font-family: roboto, arial, verdana;
@@ -202,7 +206,7 @@ h2 {
     width: 100%;
     background-image: url(../photo/XHOS1300.JPG);
     background-repeat: no-repeat;
-    height: 35vh;
+    height: 55vh;
     background-position: top 25% right 0;
     background-size: cover;
     color: rgb(233, 211, 211);
@@ -223,6 +227,7 @@ h2 {
 
 #z {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 #offer {

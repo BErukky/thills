@@ -12,16 +12,18 @@
     background-color: azure;
     box-shadow: 0 30px 40px black;
     padding: 0 0 10px;
+    transition: 0.4s;
   }
 
-  .close {
+  .open {
     right: 0px;
   }
 
 
 
-  #shc li {
+  .shc li {
     margin-bottom: 20px;
+    top: 26px;
   }
 
   #mune {
@@ -34,5 +36,20 @@
     color: brown;
     font-size: 30px;
     padding-left: 20px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 0px;
+    color: brown;
+    font-size: 29px;
+    left: 0px;
+    margin-bottom: 30px;
+
+  }
+
+  .shop {
+    display: none;
   }
 }
