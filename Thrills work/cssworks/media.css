@@ -1,4 +1,9 @@
 @media (max-width:999px) {
+
+  .section-p1 {
+    padding: 40px 40px;
+  }
+
   .shc {
     display: flex;
     flex-direction: column;
@@ -29,6 +34,7 @@
   #mune {
     display: flex;
     align-items: center;
+    background-color: #e3e6f3;
 
   }
 
@@ -52,4 +58,114 @@
   .shop {
     display: none;
   }
-}
+
+  #work {
+    height: 80vh;
+    padding: 0 40PX;
+    background-position: top 40% right 40%;
+
+  }
+
+  .what {
+    text-align: center;
+    height: 20vh;
+  }
+
+  #Opposite {
+    justify-content: center;
+  }
+
+  #offer .fe-box {
+    margin: 12px 18px;
+  }
+
+  .banner .bannerbox {
+
+    min-width: 100%;
+    height: 30vh;
+
+  }
+
+  .banner2 .bannerbox {
+
+    min-width: 110%;
+    height: 30vh;
+
+  }
+
+  #newsletter .signup {
+    width: 80%;
+  }
+
+  @media (max-width:470px) {
+    .hearder {
+      padding: 10px 9px;
+    }
+
+    #work {
+
+      padding: 0 30PX;
+      background-position: 55%;
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+
+    #work h1 {
+      font-size: 38px;
+
+    }
+
+    #z {
+
+      font-size: 38px;
+    }
+
+    .what h3 {
+
+      font-size: 18px;
+      padding-bottom: 60px;
+
+    }
+
+    .We {
+      padding-top: 0px;
+    }
+
+    #Opposite {
+      width: 155px;
+      margin: 0px;
+    }
+
+    .la {
+      font-size: 30p;
+      padding-bottom: 5px;
+
+    }
+
+    .product1 .con {
+      min-width: 100%;
+
+    }
+
+    .banner .bannerbox {
+      height: 39vh;
+    }
+
+    .banner .bannerbox2 {
+      margin-top: 20px;
+    }
+
+    #newsletter .signup {
+      width: 100%;
+    }
+
+    #newsletter {
+      padding: 40px 20px;
+    }
+
+    footer .copy p {
+      text-align: start;
+
+    }
