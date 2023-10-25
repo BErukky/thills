@@ -12,8 +12,8 @@
     position: fixed;
     top: 0px;
     right: -200px;
-    height: 100vh;
-    width: 100px;
+    height: 155vh;
+    width: 150px;
     background-color: azure;
     box-shadow: 0 30px 40px black;
     padding: 0 0 10px;
@@ -27,7 +27,7 @@
 
 
   .shc li {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     top: 26px;
   }
 
@@ -169,3 +169,4 @@
       text-align: start;
 
     }
+  }
