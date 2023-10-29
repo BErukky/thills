@@ -40,3 +40,66 @@
 }
 
 /*open sela*/
+#sela {
+  display: flex;
+  margin-top: 20px;
+
+}
+
+
+#sela .photo1 {
+  width: 25%;
+  margin-right: 50px;
+}
+
+.smallImg {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small1 {
+  flex-basis: 69px;
+  cursor: pointer;
+}
+
+#sela .pro-details {
+  width: 51%;
+  padding: 30px;
+}
+
+#sela .pro-details h5 {
+  padding: 40px 0 20px 0;
+}
+
+#sela .pro-details h3 {
+  font-size: 26px;
+}
+
+#sela .pro-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#sela .pro-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+
+}
+
+#sela .pro-details input:focus {
+  outline: none;
+}
+
+#sela .pro-details button.norm {
+  background-color: rgb(187, 103, 103);
+  color: white;
+
+}
+
+#sela .pro-details span {
+  line-height: 25px;
+}
