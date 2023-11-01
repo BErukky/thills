@@ -39,6 +39,7 @@
   font-weight: 600;
 }
 
+
 /*open sela*/
 #sela {
   display: flex;
@@ -46,9 +47,16 @@
 
 }
 
+.small-img,
+#mainImg {
+
+  width: 100%;
+}
+
 
 #sela .photo1 {
-  width: 25%;
+
+  width: 40%;
   margin-right: 50px;
 }
 
@@ -58,11 +66,12 @@
 }
 
 .small1 {
-  flex-basis: 69px;
+  flex-basis: 112px;
   cursor: pointer;
 }
 
 #sela .pro-details {
+
   width: 51%;
   padding: 30px;
 }

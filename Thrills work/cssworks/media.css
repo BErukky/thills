@@ -97,77 +97,97 @@
     width: 80%;
   }
 
-  @media (max-width:470px) {
-    .hearder {
-      padding: 10px 9px;
-    }
 
-    #work {
 
-      padding: 0 30PX;
-      background-position: 55%;
-    }
+}
 
-    h2 {
-      font-size: 32px;
-    }
+@media (max-width:470px) {
+  .hearder {
+    padding: 10px 9px;
+  }
 
-    #work h1 {
-      font-size: 38px;
+  #work {
 
-    }
+    padding: 0 30PX;
+    background-position: 55%;
+  }
 
-    #z {
+  h2 {
+    font-size: 32px;
+  }
 
-      font-size: 38px;
-    }
+  #work h1 {
+    font-size: 38px;
 
-    .what h3 {
+  }
 
-      font-size: 18px;
-      padding-bottom: 60px;
+  #z {
 
-    }
+    font-size: 38px;
+  }
 
-    .We {
-      padding-top: 0px;
-    }
+  .what h3 {
 
-    #Opposite {
-      width: 155px;
-      margin: 0px;
-    }
+    font-size: 18px;
+    padding-bottom: 60px;
 
-    .la {
-      font-size: 30p;
-      padding-bottom: 5px;
+  }
 
-    }
+  .We {
+    padding-top: 0px;
+  }
 
-    .product1 .con {
-      min-width: 100%;
+  #Opposite {
+    width: 155px;
+    margin: 0px;
+  }
 
-    }
+  .la {
+    font-size: 30p;
+    padding-bottom: 5px;
 
-    .banner .bannerbox {
-      height: 39vh;
-    }
+  }
 
-    .banner .bannerbox2 {
-      margin-top: 20px;
-    }
+  .product1 .con {
+    min-width: 100%;
 
-    #newsletter .signup {
-      width: 100%;
-    }
+  }
 
-    #newsletter {
-      padding: 40px 20px;
-    }
+  .banner .bannerbox {
+    height: 39vh;
+  }
 
-    footer .copy p {
-      text-align: start;
+  .banner .bannerbox2 {
+    margin-top: 20px;
+  }
 
-    }
+  #newsletter .signup {
+    width: 100%;
+  }
+
+  #newsletter {
+    padding: 40px 20px;
+  }
+
+  footer .copy p {
+    text-align: start;
+
+  }
+
+  /*open sela*/
+  #sela {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sela .photo1 {
+
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #sela .pro-details {
+
+    width: 100%;
   }
 }
