@@ -17,7 +17,7 @@
   padding-bottom: 5px;
   color: rgb(187, 103, 103);
   border: 10px thin #e3e6f3;
-  font-size: 55px;
+  font-size: 40px;
 
 }
 
@@ -49,16 +49,17 @@
 
 .small-img,
 #mainImg {
-
   width: 100%;
 }
 
 
 #sela .photo1 {
 
-  width: 40%;
-  margin-right: 50px;
+  width: 35%;
+  margin-right: 49px;
 }
+
+
 
 .smallImg {
   display: flex;
@@ -66,12 +67,11 @@
 }
 
 .small1 {
-  flex-basis: 112px;
+  flex-basis: 100px;
   cursor: pointer;
 }
 
 #sela .pro-details {
-
   width: 51%;
   padding: 30px;
 }
