@@ -8,3 +8,36 @@
   font-size: 60px;
   color: white;
 }
+
+#about {
+  padding: 130px 130px 0 130px;
+}
+
+#about .aboutht {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#about .about-photo {
+  width: 50%;
+  margin-right: 39px;
+}
+
+#about img {
+  width: 90%;
+  object-fit: cover;
+}
+
+#about .details {
+  width: 55%;
+
+}
+
+#about p {
+  line-height: 30px;
+}
+
+#Opposite {
+  margin-bottom: 20px;
+}

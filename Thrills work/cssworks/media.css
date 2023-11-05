@@ -1,7 +1,22 @@
 @media (max-width:999px) {
 
+
+
   .section-p1 {
     padding: 40px 40px;
+  }
+
+  .topic {
+    display: none;
+  }
+
+  .JPG {
+    object-position: top;
+    width: 90px;
+    object-position: left;
+    top: 20px;
+    border-radius: 20px;
+    margin-right: 0px;
   }
 
   .shc {
@@ -101,7 +116,7 @@
 
 }
 
-@media (max-width:477px) {
+@media (max-width:540px) {
   .hearder {
     padding: 10px 9px;
   }
@@ -189,5 +204,28 @@
     width: 100% !important;
     margin-right: 0px !important;
   }
+
+  /*ABOUT PAGE*/
+  #about .aboutht {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  #about {
+    padding: 100px 20px 0 20px;
+  }
+
+  #about .about-photo {
+    width: 200% !important;
+    margin-right: 0% !important;
+    margin-bottom: 29px;
+  }
+
+  #about .details {
+    width: 200% !important;
+  }
+
 
 }
