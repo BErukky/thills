@@ -112,7 +112,15 @@
     width: 80%;
   }
 
+  /*contant*/
+  #fromd {
 
+    padding: 40px !important;
+  }
+
+  #fromd form {
+    width: 52% !important;
+  }
 
 }
 
@@ -227,5 +235,35 @@
     width: 200% !important;
   }
 
+  /*contact*/
+  .contact-details {
+    flex-direction: column;
+  }
 
+  .contact-details .detailsadss {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+
+  .contact-details .map {
+    width: 100% !important;
+  }
+
+  #fromd {
+
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+
+  #fromd form {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+
+  .maker {
+    display: block !important;
+    padding-bottom: 20px m !important;
+
+  }
 }

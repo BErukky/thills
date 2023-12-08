@@ -46,7 +46,8 @@
   width: 45%;
 }
 
-.contact-details .detailsadss h2 {
+.contact-details .detailsadss h2,
+form h2 {
   font-size: 34px;
   line-height: 30px;
   padding: 20px 0;
@@ -69,11 +70,77 @@
 }
 
 .contact-details .map {
-  width: 40%;
+  width: 60%;
   height: 300px;
 }
 
 .contact-details .map iframe {
   width: 100%;
   height: 100%;
+}
+
+#fromd {
+  display: flex;
+  justify-content: space-between;
+  margin: 29px;
+  padding: 75px;
+  border: 1px solid #e1e1e1;
+
+}
+
+
+
+
+#fromd form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 22px;
+}
+
+#fromd form input,
+#fromd form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid rgb(221, 179, 179);
+}
+
+#fromd .norm {
+  background-color: brown;
+  color: aliceblue;
+}
+
+#fromd .maker img {
+  width: 100px;
+  border-radius: 70%;
+}
+
+.maker {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.maker div img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.maker div p {
+  margin: 10px 10px;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.maker span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
 }
