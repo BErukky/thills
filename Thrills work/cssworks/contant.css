@@ -1,10 +1,79 @@
 .page-heard,
 .about {
-  background-image: url("../photo/422fa7cf-dc02-4b77-b18e-cd0247a4d0fb.jpg");
+  background-image: url("../photo/422fa7cf-dc02-4b77-b18e-cd0247a4d0fb.jpg  ");
 
 }
 
 .la-wok {
   font-size: 60px;
   color: white;
+}
+
+.contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.icons a {
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(187, 103, 103);
+  transition: 0.3s eee;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.icons a:hover,
+.icons a.active {
+  color: rgb(179, 159, 159);
+}
+
+
+.icons i {
+  margin-right: 5px;
+  font-size: larger;
+}
+
+.contact-details li {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.contact-details .detailsadss {
+  width: 45%;
+}
+
+.contact-details .detailsadss h2 {
+  font-size: 34px;
+  line-height: 30px;
+  padding: 20px 0;
+}
+
+.contact-details .detailsadss li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+.contact-details .detailsadss li i {
+  font-size: 19px;
+  padding-right: 22px;
+}
+
+.contact-details .detailsadss li p {
+  margin: 0;
+  font-size: 15 px;
+}
+
+.contact-details .map {
+  width: 40%;
+  height: 300px;
+}
+
+.contact-details .map iframe {
+  width: 100%;
+  height: 100%;
 }
