@@ -1,0 +1,96 @@
+#cart-add table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+#cart-add table img {
+  width: 30%;
+}
+
+#cart-add table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+
+#cart-add table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart-add table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+
+#cart-add table td:nth-child(4),
+#cart-add table td:nth-child(5),
+#cart-add table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart-add table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+
+}
+
+#cart-add table thead {
+  border: 1px solid rgb(214, 142, 142);
+  border-left: none;
+  border-right: none;
+
+}
+
+#cart-add table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+#cart-add table tbody tr td {
+  padding-top: 15px;
+}
+
+#cart-add table tbody td {
+  font-size: 13px;
+}
+
+#cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+
+#Subtotal {
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid rgb(214, 142, 142);
+  padding: 30px;
+}
+
+#Subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#Subtotal table td {
+  width: 50%;
+  border: 1px solid rgb(214, 142, 142);
+  padding: 10px;
+  font-size: 13px;
+}
+
+#Subtotal h3 {
+  padding-bottom: 15px;
+}
+
+#Subtotal button {
+  background-color: rgb(194, 109, 109);
+  color: white;
+  padding: 12px 20px;
+}
