@@ -10,3 +10,4 @@ die.addEventListener('click', () => {
 close.addEventListener('click', () => {
   nav.classList.remove("open")
 });
+alert("This Site is not Fully Functional Visit our Social Media SITES FOR NOW!");
