@@ -266,4 +266,16 @@
     padding-bottom: 20px m !important;
 
   }
+
+  /*Cart totals*/
+  #cart {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  #Subtotal {
+    width: 100% !important;
+    padding: 20px !important;
+  }
 }
