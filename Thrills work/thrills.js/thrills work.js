@@ -1,5 +1,5 @@
 const die = document.querySelector('.bar');
-const close = document.getElementById('close')
+const close = document.getElementById('close');
 const nav = document.querySelector('.shc');
 
 
