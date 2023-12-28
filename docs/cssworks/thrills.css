@@ -90,6 +90,7 @@ body {
     color: rgb(187, 103, 103);
     box-shadow: 3px 2px 0 0 rgba(238, 134, 134, 0.15);
     border-radius: 5px;
+    margin-left: 123px;
 
 
 }
@@ -100,7 +101,16 @@ body {
     object-position: left;
     top: 20px;
     border-radius: 20px;
-    margin-right: 30px;
+    margin-right: 10px;
+    align-items: last baseline;
+    display: flex;
+}
+
+.Shce {
+    display: flex;
+    margin-left: 195px;
+    align-items: last baseline;
+
 }
 
 .shc {
@@ -109,8 +119,6 @@ body {
     justify-content: center;
 }
 
-
-
 .shop {
     width: 30px;
 }
@@ -118,6 +126,8 @@ body {
 .move {
     margin-left: 40px;
 }
+
+
 
 .shc li {
     list-style: none;
@@ -172,7 +182,7 @@ h2 {
     background-position: top 5% right 0;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 99vh;
     width: 100%;
     padding: 0 40PX;
     display: flex;

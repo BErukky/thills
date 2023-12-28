@@ -6,17 +6,29 @@
     padding: 40px 40px;
   }
 
+  .hearder {
+    padding: 10px 9px;
+
+  }
+
+  .Shce {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px !important;
+  }
+
+
   .topic {
     display: none;
   }
 
   .JPG {
     object-position: top;
-    width: 90px;
-    object-position: left;
+    width: 80px;
+    object-position: right;
     top: 20px;
-    border-radius: 20px;
-    margin-right: 0px;
+    border-radius: 10px;
+    margin-left: 0px;
   }
 
   .shc {
@@ -126,7 +138,10 @@
 
 @media (max-width:540px) {
   .hearder {
-    padding: 10px 9px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+
   }
 
   #work {
