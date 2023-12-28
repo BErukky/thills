@@ -192,7 +192,34 @@ h2 {
     box-shadow: 10px 10px 6px #e3e6f3;
 }
 
-#work h1 {
+#work {
+    animation: pics 20s infinite step-start;
+
+}
+
+@keyframes pics {
+    0% {
+        background-image: url(../photo/out.jpg);
+    }
+
+    40% {
+        background-image: url(../photo/outfit3.jpg);
+    }
+
+    50% {
+        background-image: url(../photo/outfit4.jpg);
+    }
+
+    60% {
+        background-image: url(../photo/our.JPG);
+    }
+
+}
+
+
+
+#work h1,
+h2 {
     color: rgb(187, 103, 103);
 
 }
