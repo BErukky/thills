@@ -37,12 +37,16 @@
                 class="shop">Shop</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contant.html">Contact</a></li>
-          <li><a href="cart.html" class="active"><i class="fas fa-shopping-bag"></i></li>
+          <li><a href="cart.html" class="active"><i class="fas fa-shopping-bag"></i>
+              <div class="cart-item">0</div>
+          </li>
         </ul>
       </div>
     </div>
     <div id="mune">
-      <a href="shop.html"><i class="fas fa-shopping-bag"></i></a>
+      <a href="cart.html"><i class="fas fa-shopping-bag">
+          <div class="cart-item">0</div>
+        </i></a>
       <span class="bar"><i class="fas fa-outdent"></i></span>
     </div>
 
@@ -65,32 +69,16 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><a href="#"><i class="fas fa-times-circle"></i></a></td>
+        <div class="cart-cont"><tr>
+          <td class="Remove"><a href="#"><i class="fas fa-times-circle"></i></a></td>
           <td><img src="photo/b11afd08-92b2-4677-bc8e-fe77fa59ee0f.jpg" alt=""> </td>
           <td>Swiss Dasmask Fabrics</td>
           <td>₦8000 per yard</td>
-          <td><input type="number" value="1"></td>
+          <td class="cart-itemnumb"><input type="number" value="1"></td>
           <td>₦8000</td>
-        </tr>
+        </tr></div>
 
-        <tr>
-          <td><a href="#"><i class="fas fa-times-circle"></i></a></td>
-          <td><img src="photo/outfit2.jpg" alt=""> </td>
-          <td>Jumpsuits</td>
-          <td>₦12,000 upwards</td>
-          <td><input type="number" value="1"></td>
-          <td>₦12,000</td>
-        </tr>
-
-        <tr>
-          <td><a href="#"><i class="fas fa-times-circle"></i></a></td>
-          <td><img src="gold/PVKZ4252.JPG" alt=""> </td>
-          <td>Necklace</td>
-          <td>₦8000</td>
-          <td><input type="number" value="1"></td>
-          <td>₦8000</td>
-        </tr>
+        
       </tbody>
 
 
@@ -110,14 +98,14 @@
           <td>
             cart Total
           </td>
-          <td>
-            ₦28,000
+          <td class="cart-total">
+            ₦<strong class="cart-numb"> 0</strong>
           </td>
         </tr>
 
         <tr>
-          <td><strong>Total</strong></td>
-          <td><strong>₦28,000</strong></td>
+          <td><strong class="cart-total">Total</strong></td>
+          <td class="cart-numb">₦<strong class="cart-numb"> 0</strong></td>
         </tr>
       </table>
 

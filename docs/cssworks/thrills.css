@@ -330,6 +330,12 @@ h2 {
 }
 
 /*Future*/
+
+.is-subscribe {
+    background-color: brown;
+    color: green;
+}
+
 .product1 {
     text-align: center;
 }
