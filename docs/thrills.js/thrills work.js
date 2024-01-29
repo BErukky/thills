@@ -42,11 +42,36 @@ prodcts.forEach((prodcts)=>{
           </div>
           <h4>₦${prodcts.price} </h4>
         </div>
-        <a href="#">${prodcts.cart}</i></a>
+        <a href="#" class="cart-addjs" data-prodct-name="${prodcts.prname}">${prodcts.cart}</i></a>
       </div> 
       </div>   
       `; 
-})
- console.log(prodctsHTML); 
+}) ;
 shopDOM.innerHTML=prodctsHTML
 
+document.querySelectorAll('.cart-addjs')
+.forEach((button)=>{
+  button.addEventListener('click',()=>{
+  const productName = button.dataset.prodctName; 
+
+let matchingItem;
+
+
+cartadd.forEach((item)=>{
+  if (productName=== item.productName){
+matchingItem=item
+
+  }
+});
+
+if (matchingItem){
+  matchingItem.quantitya+=1;
+}else{
+  cartadd.push({
+    productName:productName,
+    quantitya:1
+  }); 
+}
+  console.log(cartadd);
+  });
+});
