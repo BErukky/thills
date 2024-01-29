@@ -1,5 +1,5 @@
 
-const prodcts =[{
+export const prodcts =[{
   image:'photo/b11afd08-92b2-4677-bc8e-fe77fa59ee0f.jpg',
   nameofcompy:'Thrills Couure',
   prname:'Swiss Dasmask Fabrics',

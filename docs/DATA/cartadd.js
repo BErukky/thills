@@ -1,1 +1,1 @@
-const cartadd = [];
+ export const cartadd = [];

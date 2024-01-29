@@ -1,3 +1,9 @@
+import { cartadd } from "../DATA/cartadd.js";
+import { prodcts } from "../DATA/prodcts.js";
+
+
+
+
 const die = document.querySelector('.bar');
 const close = document.getElementById('close');
 const nav = document.querySelector('.shc');
