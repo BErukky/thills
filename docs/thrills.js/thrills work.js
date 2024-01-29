@@ -48,7 +48,9 @@ prodcts.forEach((prodcts)=>{
       `; 
 }) ;
 shopDOM.innerHTML=prodctsHTML
+//upload End
 
+//make it interactive to cart
 document.querySelectorAll('.cart-addjs')
 .forEach((button)=>{
   button.addEventListener('click',()=>{
@@ -65,13 +67,22 @@ matchingItem=item
 });
 
 if (matchingItem){
-  matchingItem.quantitya+=1;
+  matchingItem.quantity+=1;
 }else{
   cartadd.push({
     productName:productName,
-    quantitya:1
+    quantity:1
   }); 
 }
-  console.log(cartadd);
+
+let cartQuantity=0;
+
+cartadd.forEach((item)=>{
+
+  cartQuantity+=item.quantity;
+});
+cartItem.innerHTML=cartQuantity; 
+
+
   });
 });
