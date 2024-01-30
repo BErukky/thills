@@ -1,4 +1,4 @@
-import { cartadd } from "../DATA/cartadd.js";
+import { cartadd, addtoCart} from "../DATA/cartadd.js";
 import { prodcts } from "../DATA/prodcts.js";
 
 
@@ -11,7 +11,7 @@ const cartItem =document.querySelector('.cart-item')
 const cartmoblie =document.querySelector('.cart-itemMBli')
 const cartRemove =document.querySelector('.Remove')
 const cartTotla =document.querySelector('.cart-numb')
-const cartContenItrm =document.querySelector('.cart-cont')
+
 const shopDOM =document.querySelector('.content')
 const boDy = document.querySelector('.product1')
 
@@ -49,7 +49,7 @@ prodcts.forEach((prodcts)=>{
           </div>
           <h4>₦${prodcts.price} </h4>
         </div>
-        <a href="#" class="cart-addjs" data-prodct-name="${prodcts.prname}">${prodcts.cart}</i></a>
+        <a href="#" class="cart-addjs" data-prodct-id="${prodcts.id}">${prodcts.cart}</i></a>
       </div> 
       </div>   
       `; 
@@ -58,31 +58,9 @@ shopDOM.innerHTML=prodctsHTML
 //upload End
 
 //make it interactive to cart
-document.querySelectorAll('.cart-addjs')
-.forEach((button)=>{
-  button.addEventListener('click',()=>{
-  const productName = button.dataset.prodctName; 
 
-let matchingItem;
-
-
-cartadd.forEach((item)=>{
-  if (productName=== item.productName){
-matchingItem=item
-
-  }
-});
-
-if (matchingItem){
-  matchingItem.quantity+=1;
-}else{
-  cartadd.push({
-    productName:productName,
-    quantity:1
-  }); 
-}
-
-let cartQuantity=0;
+function updateCartQuantity(){
+  let cartQuantity=0;
 
 cartadd.forEach((item)=>{
 
@@ -90,7 +68,16 @@ cartadd.forEach((item)=>{
 });
 cartItem.innerHTML=cartQuantity; 
 cartmoblie.innerHTML=cartQuantity;
+}
+
+document.querySelectorAll('.cart-addjs')
+.forEach((button)=>{
+  button.addEventListener('click',()=>{
+const productId = button.dataset.prodctId; 
+  addtoCart(productId);
+updateCartQuantity();
 
 
   });
 });
+//interactive to cart End

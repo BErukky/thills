@@ -108,16 +108,18 @@ body {
 
 .Shce {
     display: flex;
-    margin-left: 195px;
+    margin-left: 100px;
     align-items: last baseline;
 
 }
 
-.shc {
+.shc{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
 
 .shop {
     width: 30px;
@@ -167,6 +169,7 @@ body {
 #close {
     display: none;
 }
+
 
 /* HOME Page*/
 h1 {
