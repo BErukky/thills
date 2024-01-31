@@ -22,10 +22,18 @@ matchingProduct=prodct;
   `
   <section id="cart-add" class="section-p1">
   <table   width="100%">
-       <div class="cart-add" >
-     
-      <tbody>
+      <thead>
+        <tr>
+          <td>Remove</td>
+          <td>Imges</td>
+          <td>Product</td>
+          <td>Price</td>
+          <td>Quantity</td>
+          <td>Subtotal</td>
+        </tr>
+      </thead>
       
+      <tbody>
         <div class="cart-cont">
           <tr>
           <td class="Remove"><a href="#"><i class="fas fa-times-circle"></i></a></td>
@@ -36,16 +44,22 @@ matchingProduct=prodct;
           <td>${matchingProduct.price}</td>
         </tr>
         </div>
- 
+  
+  
       </tbody>
-      </div>
+  
+  
+   
+    </table>
+  
+ 
     
   
-    </table>
-    </section>
+  
+  </section>
   
   
   `;
 }); 
-document.querySelector('.cart-add').innerHTML=caartSummaryHTML;
+document.querySelector('#cart-add').innerHTML=caartSummaryHTML;
 console.log(caartSummaryHTML)
