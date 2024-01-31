@@ -9,7 +9,7 @@ const close = document.getElementById('close');
 const nav = document.querySelector('.shc');
 const cartItem =document.querySelector('.cart-item')
 const cartmoblie =document.querySelector('.cart-itemMBli')
-const cartRemove =document.querySelector('.Remove')
+
 const cartTotla =document.querySelector('.cart-numb')
 
 const shopDOM =document.querySelector('.content')
