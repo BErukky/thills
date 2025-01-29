@@ -363,7 +363,7 @@ h2 {
 
     80%,
     96% {
-        background-image: url(../img/out-4.jpg);
+        background-image: url(../gold/ITEG1782.JPG);
     }
 
     100% {
@@ -374,8 +374,9 @@ h2 {
 
 #work h1,
 h2 {
-    color: rgb(160, 96, 96);
-
+    color: rgb(139, 69, 19);
+    text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.3);
+    font-weight: bold;
 }
 
 #work button {
