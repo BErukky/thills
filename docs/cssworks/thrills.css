@@ -9,11 +9,149 @@
 
 }
 
+/* preloader */
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000000000000000000;
+    display: flex;
+}
+
+#preloader:before,
+#preloader:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-color: #000;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+#preloader:after {
+    left: auto;
+    right: 0;
+}
+
+#preloader .loader_line {
+    margin: auto;
+    width: 1px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+}
+
+.loader_line:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #fff;
+    -webkit-animation: lineheight 1000ms ease-in-out 0s forwards;
+    -o-animation: lineheight 1000ms ease-in-out 0s forwards;
+    animation: lineheight 1000ms ease-in-out 0s forwards;
+}
+
+.loader_line:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #999999;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-animation: lineround 1200ms linear 0s infinite;
+    -o-animation: lineround 1200ms linear 0s infinite;
+    animation: lineround 1200ms linear 0s infinite;
+    animation-delay: 2000ms;
+}
+
+@keyframes lineheight {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes lineround {
+    0% {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+
+    100% {
+        -webkit-transform: translateY(200%);
+        -ms-transform: translateY(200%);
+        -o-transform: translateY(200%);
+        transform: translateY(200%);
+    }
+}
+
+.portfolio_list {
+    min-height: 50vh;
+}
+
+/*hiding all*/
+.preloaded .loader_line:after {
+    opacity: 0;
+}
+
+.preloaded .loader_line {
+    opacity: 0;
+    height: 100% !important;
+}
+
+.preloaded:before,
+.preloaded:after {
+    -webkit-animation: preloadedzero 300ms ease-in-out 500ms forwards;
+    -o-animation: preloadedzero 300ms ease-in-out 500ms forwards;
+    animation: preloadedzero 300ms ease-in-out 500ms forwards;
+}
+
+@keyframes preloadedzero {
+    0% {
+        width: 50%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+/* preloader END */
+
+
+
 /* thrills work coustum*/
 h1 {
     font-size: 50px;
-    line: family 64px;
-
+    line-height: 64px;
 }
 
 h2 {
@@ -66,7 +204,7 @@ body {
 }
 
 /*the hearder*/
-.hearder {
+.header {
 
     display: flex;
     flex-direction: row;
@@ -81,14 +219,14 @@ body {
 }
 
 .topic {
-    font-family: Roboto, Arial;
+    font-family: "Charm", serif;
     font-size: 30px;
-    border-left: 20px solid;
+    border-left: 15px solid;
     border-top: 10px solid;
-    border-color: rgb(190, 111, 111);
+    border-color: rgb(160, 96, 96);
     padding-bottom: 10px;
-    color: rgb(187, 103, 103);
-    box-shadow: 3px 2px 0 0 rgba(238, 134, 134, 0.15);
+    color: rgb(160, 96, 96);
+    box-shadow: 3px 2px 0 0 rgba(22, 21, 21, 0.15);
     border-radius: 5px;
     margin-left: 123px;
 
@@ -113,7 +251,7 @@ body {
 
 }
 
-.shc{
+.shc {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,8 +319,8 @@ h2 {
 }
 
 #work {
-    background: url(../photo/out.jpg);
-    background-position: top 5% right 0;
+    background: url(../img/home-pg.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 99vh;
@@ -196,34 +334,47 @@ h2 {
 }
 
 #work {
-    animation: pics 20s infinite step-start;
-
+    animation: pics 40s infinite step-start;
+    background-position: center;
+    background-size: cover;
 }
 
 @keyframes pics {
-    0% {
-        background-image: url(../photo/out.jpg);
+
+    0%,
+    16% {
+        background-image: url(../img/thr.jpg);
     }
 
-    40% {
-        background-image: url(../photo/outfit3.jpg);
+    20%,
+    36% {
+        background-image: url(../img/home-pg.jpg);
     }
 
-    50% {
-        background-image: url(../photo/outfit4.jpg);
+    40%,
+    56% {
+        background-image: url(../img/out-3.jpg);
     }
 
-    60% {
+    60%,
+    76% {
         background-image: url(../photo/our.JPG);
     }
 
-}
+    80%,
+    96% {
+        background-image: url(../img/out-4.jpg);
+    }
 
+    100% {
+        background-image: url(../photo/outfit6.jpg);
+    }
+}
 
 
 #work h1,
 h2 {
-    color: rgb(187, 103, 103);
+    color: rgb(160, 96, 96);
 
 }
 
@@ -246,7 +397,7 @@ h2 {
     width: 100%;
     background-image: url(../photo/XHOS1300.JPG);
     background-repeat: no-repeat;
-    height: 55vh;
+    height: 49vh;
     background-position: top 25% right 0;
     background-size: cover;
     color: rgb(233, 211, 211);
@@ -321,9 +472,9 @@ h2 {
     text-align: center;
     padding-bottom: 5px;
     text-shadow: 10px 10px 8px #e3e6f3;
-    color: rgb(187, 103, 103);
+    color: rgb(19, 17, 17);
     border: 10px thin #e3e6f3;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 20px 20px 50px rgba(117, 116, 116, 0.541);
 
 }
 
@@ -333,6 +484,39 @@ h2 {
 }
 
 /*Future*/
+
+#working {
+    background: url(../img/thr.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 0 40PX;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 6px #e3e6f3;
+}
+
+#working-1 {
+    background: url(../img/shopping-bag.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 0 40PX;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* For Safari support */
+}
 
 .is-subscribe {
     background-color: brown;
@@ -437,12 +621,10 @@ h2 {
 
 .banner .bannerbox2 {
     background-image: url(../gold/CTVP4795.JPG);
-    color: ;
-
 }
 
 .banner h2 {
-    color: rgb(70, 48, 48);
+    color: rgb(82, 20, 20);
     font-size: 40px;
     font-weight: 800;
 }
@@ -475,7 +657,7 @@ h2 {
 }
 
 .banner2 h1 {
-    color: rgb(124, 58, 58);
+    color: rgb(14, 11, 11);
     font-weight: 500;
     font-size: x-large;
 

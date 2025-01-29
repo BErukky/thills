@@ -9,7 +9,7 @@ productId:"e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
 quantity:1
  }];
 
- }
+ };
  
   
 
@@ -49,4 +49,14 @@ if (cartItem.productId !== productId){
 
 cartadd=newCart; 
 saveTostorage();
+}
+
+export function 
+calulatecartQuatity(){
+  let calulatecartQuatity=0;
+
+  cartadd.forEach((cartItem)=>{
+calulatecartQuatity+=cartItem.quantity;
+  });
+  return calulatecartQuatity;
 }

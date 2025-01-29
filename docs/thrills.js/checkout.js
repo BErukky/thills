@@ -1,4 +1,4 @@
- import { cartadd, removeFromcart } from "../DATA/cartadd.js";
+ import { calulatecartQuatity, cartadd, removeFromcart } from "../DATA/cartadd.js";
  import { prodcts } from "../DATA/prodcts.js";
 
 
@@ -8,7 +8,7 @@ let caartSummaryHTML= '';
 cartadd.forEach((cartItem) =>{
 const prodctId =cartItem.productId
 
-
+ 
 let matchingProduct;
 
 prodcts.forEach((prodct)=>{
@@ -17,7 +17,7 @@ prodcts.forEach((prodct)=>{
 matchingProduct=prodct;
   }
 });
-
+  
  caartSummaryHTML+=
   `
   <section id="cart-add" class="section-p1">
@@ -40,7 +40,7 @@ matchingProduct=prodct;
           <td><img src="${matchingProduct.image}" alt=""> </td>
           <td>${matchingProduct.prname}</td>
           <td>${matchingProduct.price}</td>
-          <td class="cart-itemnumb"><input type="number" value="${cartItem.quantity}"> </td>
+          <td class="cart-itemnumb"><input type="number" value="${cartItem.quantity}"></td>
           <td>${matchingProduct.price}</td>
         </tr>
         </div>
@@ -63,6 +63,17 @@ document.querySelectorAll('.Remove').forEach((remove)=>{
 
     const contenter = document.querySelector(`#js-cart-add-con-${productId}`);
     contenter.remove();
+
+    updatecartQuantity();
+
   }); 
 });
+function updatecartQuantity() {
+  const cartQuantity= calulatecartQuatity();
+
+document.querySelector('.js-cart-item').innerHTML=`${cartQuantity}`;
+document.querySelector('.js-cart-mobeli').innerHTML=`${cartQuantity}`;
+}
+updatecartQuantity();
+
 

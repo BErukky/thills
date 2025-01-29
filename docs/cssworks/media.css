@@ -1,296 +1,304 @@
-@media (max-width:999px) {
-
-
-
-  .section-p1 {
-    padding: 40px 40px;
-  }
-
-  .hearder {
-    padding: 10px 9px;
-
-  }
-
-  .Shce {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 0px !important;
-  }
+ @media (max-width:999px) {
+
+
+
+   .section-p1 {
+     padding: 40px 40px;
+   }
+
+   .header {
+     padding: 10px 9px;
+
+   }
+
+   .Shce {
+     display: flex;
+     justify-content: space-between;
+     margin-left: 0px !important;
+   }
+
+
+   .topic {
+     display: none;
+   }
+
+   .JPG {
+     object-position: top;
+     width: 80px;
+     object-position: right;
+     top: 20px;
+     border-radius: 10px;
+     margin-left: 0px;
+   }
 
+   .shc {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     position: fixed;
+     top: 0px;
+     right: -200px;
+     height: 155vh;
+     width: 150px;
+     background-color: azure;
+     box-shadow: 0 30px 40px black;
+     padding: 0 0 10px;
+     transition: 0.4s;
+   }
 
-  .topic {
-    display: none;
-  }
+   .open {
+     right: 0px;
+   }
 
-  .JPG {
-    object-position: top;
-    width: 80px;
-    object-position: right;
-    top: 20px;
-    border-radius: 10px;
-    margin-left: 0px;
-  }
 
-  .shc {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: fixed;
-    top: 0px;
-    right: -200px;
-    height: 155vh;
-    width: 150px;
-    background-color: azure;
-    box-shadow: 0 30px 40px black;
-    padding: 0 0 10px;
-    transition: 0.4s;
-  }
 
-  .open {
-    right: 0px;
-  }
+   .shc li {
+     margin-bottom: 35px;
+     top: 26px;
+   }
 
+   #mune {
+     display: flex;
+     align-items: center;
+     background-color: #e3e6f3;
 
+   }
 
-  .shc li {
-    margin-bottom: 35px;
-    top: 26px;
-  }
+   #mune i {
+     color: brown;
+     font-size: 30px;
+     padding-left: 20px;
+   }
 
-  #mune {
-    display: flex;
-    align-items: center;
-    background-color: #e3e6f3;
+   #close {
+     display: initial;
+     position: absolute;
+     top: 0px;
+     color: brown;
+     font-size: 29px;
+     left: 0px;
+     margin-bottom: 30px;
 
-  }
+   }
 
-  #mune i {
-    color: brown;
-    font-size: 30px;
-    padding-left: 20px;
-  }
+   .shop {
+     display: none;
+   }
 
-  #close {
-    display: initial;
-    position: absolute;
-    top: 0px;
-    color: brown;
-    font-size: 29px;
-    left: 0px;
-    margin-bottom: 30px;
+   #work {
+     height: 80vh;
+     padding: 0 40PX;
+     background-position: top 40% right 40%;
 
-  }
+   }
 
-  .shop {
-    display: none;
-  }
+   #working {
+     height: 60vh;
+     padding: 0 40px;
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+   }
 
-  #work {
-    height: 80vh;
-    padding: 0 40PX;
-    background-position: top 40% right 40%;
+   .what {
+     text-align: center;
+     height: 20vh;
+   }
 
-  }
+   #Opposite {
+     justify-content: center;
+   }
 
-  .what {
-    text-align: center;
-    height: 20vh;
-  }
+   #offer .fe-box {
+     margin: 12px 18px;
+   }
 
-  #Opposite {
-    justify-content: center;
-  }
+   .banner .bannerbox {
 
-  #offer .fe-box {
-    margin: 12px 18px;
-  }
+     min-width: 100%;
+     height: 30vh;
 
-  .banner .bannerbox {
+   }
 
-    min-width: 100%;
-    height: 30vh;
+   .banner2 .bannerbox {
 
-  }
+     min-width: 110%;
+     height: 30vh;
 
-  .banner2 .bannerbox {
+   }
 
-    min-width: 110%;
-    height: 30vh;
+   #newsletter .signup {
+     width: 80%;
+   }
 
-  }
+   /*contant*/
+   #fromd {
 
-  #newsletter .signup {
-    width: 80%;
-  }
+     padding: 40px !important;
+   }
 
-  /*contant*/
-  #fromd {
+   #fromd form {
+     width: 52% !important;
+   }
 
-    padding: 40px !important;
-  }
+ }
 
-  #fromd form {
-    width: 52% !important;
-  }
+ @media (max-width:540px) {
+   .header {
+     padding: 10px 0px;
+     display: flex;
+     justify-content: space-between;
 
-}
+   }
 
-@media (max-width:540px) {
-  .hearder {
-    padding: 10px 0px;
-    display: flex;
-    justify-content: space-between;
+   #work {
 
-  }
+     padding: 0 30PX;
+     background-position: 55%;
+   }
 
-  #work {
+   h2 {
+     font-size: 32px;
+   }
 
-    padding: 0 30PX;
-    background-position: 55%;
-  }
+   #work h1 {
+     font-size: 38px;
 
-  h2 {
-    font-size: 32px;
-  }
+   }
 
-  #work h1 {
-    font-size: 38px;
+   #z {
 
-  }
+     font-size: 38px;
+   }
 
-  #z {
+   .what h3 {
 
-    font-size: 38px;
-  }
+     font-size: 18px;
+     padding-bottom: 60px;
 
-  .what h3 {
+   }
 
-    font-size: 18px;
-    padding-bottom: 60px;
+   .We {
+     padding-top: 0px;
+   }
 
-  }
+   #Opposite {
+     width: 155px;
+     margin: 0px;
+   }
 
-  .We {
-    padding-top: 0px;
-  }
+   .la {
+     font-size: 30p;
+     padding-bottom: 5px;
 
-  #Opposite {
-    width: 155px;
-    margin: 0px;
-  }
+   }
 
-  .la {
-    font-size: 30p;
-    padding-bottom: 5px;
+   .product1 .con {
+     min-width: 100%;
 
-  }
+   }
 
-  .product1 .con {
-    min-width: 100%;
+   .banner .bannerbox {
+     height: 39vh;
+   }
 
-  }
+   .banner .bannerbox2 {
+     margin-top: 20px;
+   }
 
-  .banner .bannerbox {
-    height: 39vh;
-  }
+   #newsletter .signup {
+     width: 100%;
+   }
 
-  .banner .bannerbox2 {
-    margin-top: 20px;
-  }
+   #newsletter {
+     padding: 40px 20px;
+   }
 
-  #newsletter .signup {
-    width: 100%;
-  }
+   footer .copy p {
+     text-align: start;
 
-  #newsletter {
-    padding: 40px 20px;
-  }
+   }
 
-  footer .copy p {
-    text-align: start;
+   /*open sela*/
+   #sela {
+     display: flex;
+     flex-direction: column;
+   }
 
-  }
+   #sela .pro-details {
+     width: 100% !important;
+     padding: 0px !important;
+   }
 
-  /*open sela*/
-  #sela {
-    display: flex;
-    flex-direction: column;
-  }
+   #sela .photo1 {
+     width: 100% !important;
+     margin-right: 0px !important;
+   }
 
-  #sela .pro-details {
-    width: 100% !important;
-    padding: 0px !important;
-  }
+   /*ABOUT PAGE*/
+   #about .aboutht {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
 
-  #sela .photo1 {
-    width: 100% !important;
-    margin-right: 0px !important;
-  }
+   }
 
-  /*ABOUT PAGE*/
-  #about .aboutht {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+   #about {
+     padding: 100px 20px 0 20px;
+   }
 
-  }
+   #about .about-photo {
+     width: 200% !important;
+     margin-right: 0% !important;
+     margin-bottom: 29px;
+   }
 
-  #about {
-    padding: 100px 20px 0 20px;
-  }
+   #about .details {
+     width: 200% !important;
+   }
 
-  #about .about-photo {
-    width: 200% !important;
-    margin-right: 0% !important;
-    margin-bottom: 29px;
-  }
+   /*contact*/
+   .contact-details {
+     flex-direction: column;
+   }
 
-  #about .details {
-    width: 200% !important;
-  }
+   .contact-details .detailsadss {
+     width: 100% !important;
+     margin-bottom: 30px;
+   }
 
-  /*contact*/
-  .contact-details {
-    flex-direction: column;
-  }
+   .contact-details .map {
+     width: 100% !important;
+   }
 
-  .contact-details .detailsadss {
-    width: 100% !important;
-    margin-bottom: 30px;
-  }
+   #fromd {
 
-  .contact-details .map {
-    width: 100% !important;
-  }
+     margin: 10px;
+     padding: 30px 10px;
+     flex-wrap: wrap;
+   }
 
-  #fromd {
+   #fromd form {
+     width: 100% !important;
+     margin-bottom: 30px;
+   }
 
-    margin: 10px;
-    padding: 30px 10px;
-    flex-wrap: wrap;
-  }
+   .maker {
+     display: block !important;
+     padding-bottom: 20px m !important;
 
-  #fromd form {
-    width: 100% !important;
-    margin-bottom: 30px;
-  }
+   }
 
-  .maker {
-    display: block !important;
-    padding-bottom: 20px m !important;
+   /*Cart totals*/
+   #cart {
+     display: flex;
+     flex-direction: column;
 
-  }
+   }
 
-  /*Cart totals*/
-  #cart {
-    display: flex;
-    flex-direction: column;
-
-  }
-
-  #Subtotal {
-    width: 100% !important;
-    padding: 20px !important;
-  }
-}
+   #Subtotal {
+     width: 100% !important;
+     padding: 20px !important;
+   }
+ }

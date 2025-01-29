@@ -3,10 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=0, initial-scale=1.0">
     <title>THRILLS COUTURE</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Add these Bootstrap CSS and meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="cssworks/thrills.css">
     <link rel="stylesheet" href="css/all.css">
@@ -18,14 +23,20 @@
 </head>
 
 <body>
-    <section class="hearder">
-        <div class="hearder">
+
+<!-- PRELOADER -->
+    <div id="preloader">
+      <div class="loader_line"></div>
+    </div>
+
+   <section class="header">
+        <div class="header">
 
             <div class="JPG">
-                <img src="logo&icons/THRILL.JPG" class="JPG">
+                <img src="logo&icons/THRILL.JPG" class="JPG" alt="Thrills Couture Logo">
             </div>
-            <div class="topic">
-                <h1>THRILLS COUTURE</h1>
+            <div class="topic" >
+                <h1 style="font-family: 'Charm', cursive;">THRILLS COUTURE</h1>
             </div>
             <div class="Shce">
                 <ul class="shc" id="nav">
@@ -33,21 +44,19 @@
                     <a href="#" id="close"><i class="fas fa-times"></i></a>
 
                     <li><a href="index.html">Home</a></li>
-                    <li> <a href="shop.html"> <img src="logo&icons/shopping_cart_FILL0_wght400_GRAD0_opsz48.svg"
-                                class="shop">Shop</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="contant.html">Contact</a></li>
-                   <li><a href="cart.html"><div class="cart-item">0</div><i class="fas fa-shopping-bag"></i>
-                    </li>
+                    <li><a href="about.html"class="active">About</a></li>
+                    <li> <a href="shop.html"> Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                   
+
                 </ul>
-            </div>
+                            </div>
         </div>
-    <div id="mune">
-        <a href="cart.html"><i class="fas fa-shopping-bag">
-                <div class="cart-itemMBli">0</div>
-            </i></a>
+<div id="mune">
+        <a href="cart.html"
+          ><div class="cart-itemMBli"></div> </a>
         <span class="bar"><i class="fas fa-outdent"></i></span>
-    </div>
+      </div>
 
     </section>
 
@@ -59,10 +68,26 @@
     </h2>
     <div class="icons">
         <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i>clik here</a>
-        <a href="https://wa.me/message/UAOJOVGPWLBK1"><i class="fab fa-whatsapp"></i>clik here</a>
+        <a href="https://wa.me/+2349039110360"><i class="fab fa-whatsapp"></i>clik here</a>
         <a href="https://www.instagram.com/tgrills_couture_n_acessories?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr"><i
                 class="fab fa-instagram"></i>clik here</a>
     </div>
+
+
+<section id="about">
+        <div class="aboutht">
+            <div class="about-photo">
+                <img src="img/about.jpg" alt="">
+            </div>
+            <div class="details">
+                <h2>Thrills couture </h4>
+                    <p>We're excited to announce our upcoming gifting packages for special occasions like birthdays, anniversaries, and Valentine's Day. Customize your gifts to suit your taste and make your cherished moments unforgettable. Our price list is available, and we can't wait to help you create memorable experiences!</p>
+            </div>
+        </div>
+    </section>
+
+
+
     <section id="about">
         <div class="aboutht">
             <div class="about-photo">
@@ -162,6 +187,8 @@
 
 
             <div class="follow">
+                
+
                 <h4>Follow Us</h4>
 
                 <div class="icons">
@@ -193,6 +220,9 @@
             <P>&copy;2023,THRILLS COUTURE,RUKKY WORK</P>
         </div>
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
     <script type="module" src="thrills.js/thrills work.js"></script>
 </body>
 
