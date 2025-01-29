@@ -1,13 +1,9 @@
-import { cartadd, addtoCart, calulatecartQuatity } from "../DATA/cartadd.js";
-
 const die = document.querySelector(".bar");
 const close = document.getElementById("close");
 const nav = document.querySelector(".shc");
-const cartItem = document.querySelector(".cart-item");
+
 const cartmoblie = document.querySelector(".cart-itemMBli");
-
 const cartTotla = document.querySelector(".cart-numb");
-
 const shopDOM = document.querySelector(".content");
 const boDy = document.querySelector(".product1");
 
